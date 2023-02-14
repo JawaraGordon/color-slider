@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <title>Color Slider</title>
   </head>
   <body>
-    <div class="slider-container"></div>
+    <div class="slider-container">
+      <form>
+        <fieldset>
+          <legend>Color Slider:</legend>
+          <label for="r">R</label>
+          <input type="range" min="0" max="255" id="r" name="r" /><br /><br />
+          <label for="g">G</label>
+          <input type="range" min="0" max="255" id="g" name="g" /><br /><br />
+          <label for="b">B</label>
+          <input type="range" min="0" max="255" id="b" name="b" /><br /><br />
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
