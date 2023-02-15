@@ -16,4 +16,11 @@ console.log('b', bOut.value);
 
 r.addEventListener('change', () => {
   console.log('r', r.value);
+  rOut.value = r.value;
+});
+g.addEventListener('change', () => {
+  console.log('r', g.value);
+});
+b.addEventListener('change', () => {
+  console.log('r', b.value);
 });
