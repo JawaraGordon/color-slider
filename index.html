@@ -9,16 +9,46 @@
   </head>
   <body>
     <div class="slider-container">
-      <form>
+      <form class="form">
         <fieldset>
           <legend>Color Slider:</legend>
           <label for="r">R</label>
-          <input type="range" min="0" max="255" id="r" name="r" /><br /><br />
+          <input
+            type="range"
+            min="0"
+            max="255"
+            id="r"
+            name="r"
+            step="1"
+            value="0"
+          />
+          <output for="r" id="r-out">0</output> </fieldset><br /><br /> 
+          <fieldset>
           <label for="g">G</label>
-          <input type="range" min="0" max="255" id="g" name="g" /><br /><br />
+          <input
+            type="range"
+            min="0"
+            max="255"
+            id="g"
+            name="g"
+            step="1"
+            value="0"
+          /><output for="g" id="g-out">0</output></fieldset><br /><br />
+          <fieldset>
           <label for="b">B</label>
-          <input type="range" min="0" max="255" id="b" name="b" /><br /><br />
+          <input
+            type="range"
+            min="0"
+            max="255"
+            id="b"
+            name="b"
+            step="1"
+            value="0"
+          /><output for="b" id="b-out">0</output></fieldset><br /><br />
         </fieldset>
+        <div class="hex-container">
+            <output id="hex">#000000</output>
+        </div>
       </form>
     </div>
   </body>
