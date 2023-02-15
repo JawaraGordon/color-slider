@@ -2,9 +2,9 @@ const r = document.querySelector('#r');
 const g = document.querySelector('#g');
 const b = document.querySelector('#b');
 
-let rOut = document.querySelector('#r-out');
-let gOut = document.querySelector('#g-out');
-let bOut = document.querySelector('#b-out');
+const rOut = document.querySelector('#r-out');
+const gOut = document.querySelector('#g-out');
+const bOut = document.querySelector('#b-out');
 
 const body = document.body;
 
@@ -17,26 +17,24 @@ console.log('g', gOut.value);
 console.log('b', bOut.value);
 
 r.addEventListener('change', () => {
-  console.log('r', r.value);
-  rOut = parseInt(r.value);
+  rOut.value = r.value;
+  rOutputNum = parseInt(r.value);
   setRbgColor();
 });
 
 g.addEventListener('change', () => {
-  console.log('r', g.value);
-  gOut = parseInt(g.value);
+  gOut.value = g.value;
+  gOutputNum = parseInt(g.value);
   setRbgColor();
 });
 
 b.addEventListener('change', () => {
-  console.log('r', b.value);
-  bOut = parseInt(b.value);
+  bOut.value = b.value;
+  bOutputNum = parseInt(b.value);
   setRbgColor();
 });
 
 const setRbgColor = () => {
-  console.log('rOut', rOut);
-  console.log('gOut', gOut);
-  console.log('bOut', bOut);
-  body.style.backgroundColor = 'rgb(' + rOut + ', ' + gOut + ', ' + bOut + ')';
+  body.style.backgroundColor =
+    'rgb(' + rOutputNum + ', ' + gOutputNum + ', ' + bOutputNum + ')';
 };
