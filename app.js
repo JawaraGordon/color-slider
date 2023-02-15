@@ -1,8 +1,9 @@
-const r = document.getElementById('#r')
-const g = document.getElementById('#g')
-const b = document.getElementById('#b')
+const r = document.querySelector('#r');
+const g = document.querySelector('#g');
+const b = document.querySelector('#b');
 
-const rOut = document.getElementById('#r-out')
-const gOut = document.getElementById('#g-out')
-const bOut = document.getElementById('#b-out')
+const rOut = document.querySelector('#r-out');
+const gOut = document.querySelector('#g-out');
+const bOut = document.querySelector('#b-out');
 
+console.log('r', r);

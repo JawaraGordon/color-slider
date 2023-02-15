@@ -22,7 +22,11 @@ html{
     
 }
 
-.form{
+fieldset {
+    border: none;
+}
+
+form{
     padding-top: 40%;
     padding-bottom: 40%;
     
