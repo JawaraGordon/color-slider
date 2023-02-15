@@ -19,28 +19,24 @@ console.log('b', bOut.value);
 r.addEventListener('change', () => {
   console.log('r', r.value);
   rOut = parseInt(r.value);
-  console.log('inside', typeof rOut);
-  return rOut;
+  setRbgColor();
 });
 
 g.addEventListener('change', () => {
   console.log('r', g.value);
   gOut = parseInt(g.value);
-  console.log('inside', typeof gOut);
-  return gOut;
+  setRbgColor();
 });
+
 b.addEventListener('change', () => {
   console.log('r', b.value);
   bOut = parseInt(b.value);
-  console.log('inside', typeof bOut);
-  return bOut;
+  setRbgColor();
 });
 
-console.log('body', body);
-
-setInterval(() => {
+const setRbgColor = () => {
   console.log('rOut', rOut);
   console.log('gOut', gOut);
   console.log('bOut', bOut);
   body.style.backgroundColor = 'rgb(' + rOut + ', ' + gOut + ', ' + bOut + ')';
-}, 100);
+};
