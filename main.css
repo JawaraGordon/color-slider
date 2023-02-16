@@ -43,6 +43,7 @@ form{
 legend{
     text-align: center;
     padding: 1rem 0;
+    font-size: 1.5rem;
 }
 
 label[for="r"],
@@ -68,4 +69,5 @@ output[for="b"]{
  .hex-container{
 text-align: center;
 padding-bottom: 1rem;
+font-size: 1.5rem;
  }
