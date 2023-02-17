@@ -5,7 +5,6 @@ const b = document.querySelector('#b');
 const rOut = document.querySelector('#r-out');
 const gOut = document.querySelector('#g-out');
 const bOut = document.querySelector('#b-out');
-
 const hexOut = document.querySelector('#hex');
 
 const body = document.body;
@@ -43,8 +42,6 @@ const setHexValue = () => {
   rHex = rOutputNum.toString(16);
   gHex = gOutputNum.toString(16);
   bHex = bOutputNum.toString(16);
-
   hex = '#' + rHex + gHex + bHex;
-
   hexOut.value = hex;
 };
