@@ -9,21 +9,21 @@ const hexOut = document.querySelector('#hex');
 
 const body = document.body;
 
-r.addEventListener('change', () => {
+r.addEventListener('input', () => {
   rOut.value = r.value;
 
   setRbgColor();
   setHexValue();
 });
 
-g.addEventListener('change', () => {
+g.addEventListener('input', () => {
   gOut.value = g.value;
 
   setHexValue();
   setRbgColor();
 });
 
-b.addEventListener('change', () => {
+b.addEventListener('input', () => {
   bOut.value = b.value;
 
   setHexValue();
