@@ -12,28 +12,29 @@ const body = document.body;
 
 r.addEventListener('change', () => {
   rOut.value = r.value;
-  rOutputNum = parseInt(r.value);
-  console.log(rOutputNum)
-    setRbgColor();
-    setHexValue();
-  
+
+  setRbgColor();
+  setHexValue();
 });
 
 g.addEventListener('change', () => {
   gOut.value = g.value;
-  gOutputNum = parseInt(g.value);
+
   setHexValue();
   setRbgColor();
 });
 
 b.addEventListener('change', () => {
   bOut.value = b.value;
-  bOutputNum = parseInt(b.value);
+
   setHexValue();
   setRbgColor();
 });
 
 const setRbgColor = () => {
+  rOutputNum = parseInt(r.value);
+  gOutputNum = parseInt(g.value);
+  bOutputNum = parseInt(b.value);
   body.style.backgroundColor =
     'rgb(' + rOutputNum + ', ' + gOutputNum + ', ' + bOutputNum + ')';
 };
