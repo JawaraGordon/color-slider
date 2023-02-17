@@ -10,20 +10,13 @@ const hexOut = document.querySelector('#hex');
 
 const body = document.body;
 
-console.log('r', r.value);
-console.log('g', g.value);
-console.log('b', b.value);
-
-console.log('r', rOut.value);
-console.log('g', gOut.value);
-console.log('b', bOut.value);
-
 r.addEventListener('change', () => {
   rOut.value = r.value;
   rOutputNum = parseInt(r.value);
-  setHexValue();
-  setRbgColor();
-  return rOutputNum;
+  console.log(rOutputNum)
+    setRbgColor();
+    setHexValue();
+  
 });
 
 g.addEventListener('change', () => {
@@ -31,7 +24,6 @@ g.addEventListener('change', () => {
   gOutputNum = parseInt(g.value);
   setHexValue();
   setRbgColor();
-  return gOutputNum;
 });
 
 b.addEventListener('change', () => {
@@ -39,7 +31,6 @@ b.addEventListener('change', () => {
   bOutputNum = parseInt(b.value);
   setHexValue();
   setRbgColor();
-  return bOutputNum;
 });
 
 const setRbgColor = () => {
@@ -51,11 +42,8 @@ const setHexValue = () => {
   rHex = rOutputNum.toString(16);
   gHex = gOutputNum.toString(16);
   bHex = bOutputNum.toString(16);
-  console.log(rHex);
-  console.log(gHex);
-  console.log(bHex);
+
   hex = '#' + rHex + gHex + bHex;
-  console.log(hex);
+
   hexOut.value = hex;
-  console.log(hex.value);
 };
